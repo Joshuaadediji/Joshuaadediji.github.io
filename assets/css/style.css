@@ -226,12 +226,6 @@ nav ul li a:hover::after {
     display: flex;
     flex-direction: column;
 }
-.project-card-content {
-    padding: 30px 40px 30px 30px !important; /* top right bottom left */
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
 
 .project-card-content h3 {
     font-family: var(--font-heading);
@@ -435,7 +429,7 @@ footer p {
 /* --- Extra Mobile Fix for Better Layout (Add This at the END) --- */
 @media (max-width: 600px) {
    .project-card-content  {
-        padding: 20px !important;
+        padding: 20px 25px 20px 20px !important; /* top right bottom left */
     }
     /* Fix: Project cards should stack properly on small screens */
     .projects-grid {
