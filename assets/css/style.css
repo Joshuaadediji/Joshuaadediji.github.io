@@ -1,4 +1,3 @@
-
 /* --- 1. Variables (Modern Tech Palette) --- */
 :root {
     /* This template uses a professional "Modern Tech" color scheme. */
@@ -427,33 +426,66 @@ footer p {
     }
 }
 
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.8rem;
+/* --- Extra Mobile Fix for Better Layout (Add This at the END) --- */
+@media (max-width: 600px) {
+
+    /* Fix: Project cards should stack properly on small screens */
+    .projects-grid {
+        grid-template-columns: 1fr !important;
+        gap: 25px;
+        padding: 0 10px;
     }
-    
+
+    /* Fix: About section layout and spacing */
     .about-content {
         flex-direction: column;
         text-align: center;
+        gap: 30px;
     }
 
-    #projects .container {
-        padding: 0 5px; 
+    .profile-photo {
+        width: 180px;
+        height: 180px;
     }
 
-    .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
+    /* Fix: Skills table stacking */
     .skills-table {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         padding: 20px;
-        gap: 40px;
     }
 
-    .skill-column:not(:last-child) {
-        border-right: none;
-        border-bottom: 1px solid #e9ecef;
-        padding-bottom: 30px;
+    .skill-column {
+        border-right: none !important;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 25px;
+    }
+
+    /* Fix: Form responsiveness */
+    .contact-form {
+        padding: 25px;
+    }
+
+    .contact-form button.btn {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    /* Fix: Header text scaling */
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    /* Fix: Navigation stacking if needed */
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav ul li a {
+        padding: 10px 0;
     }
 }
