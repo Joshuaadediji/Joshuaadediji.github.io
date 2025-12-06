@@ -429,7 +429,7 @@ footer p {
 /* --- Extra Mobile Fix for Better Layout (Add This at the END) --- */
 @media (max-width: 600px) {
    .project-card-content  {
-        padding: 20px 25px 20px 20px !important; /* top right bottom left */
+        padding: 20px !important; /* top right bottom left */
     }
     /* Fix: Project cards should stack properly on small screens */
     .projects-grid {
